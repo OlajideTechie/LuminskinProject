@@ -4,7 +4,9 @@
   "description": "for ui automation ",
   "main": "index.js",
   "scripts": {
-    "chromebrowser": "cypress run --headless --browser chrome"
+    "chromebrowser": "cypress run --headless --browser chrome",
+    "firefox": "cypress run --headless --browser firefox",
+    "Headed": "cypress run --headed --browser firefox"
   },
   "repository": {
     "type": "git",

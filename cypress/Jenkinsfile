@@ -1,0 +1,23 @@
+
+
+node('master') {
+ 
+    stage("Git checkout"){
+        
+        git branch: 'main', credentialsId: '2f63fd26-acfc-4058-b6cb-5559202ca922', url: 'https://github.com/Olaprog/LuminskinProject.git'
+
+    }
+    
+    stage("npm install"){
+        
+    bat label: 'Install npm package', script: 'npm install' 
+    
+    }
+
+    
+   stage("Run test"){
+        
+            bat label: 'Run test', script: 'npm run chromebrowser' 
+    }
+}   
+    

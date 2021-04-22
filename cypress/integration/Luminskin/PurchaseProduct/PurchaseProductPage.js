@@ -7,7 +7,7 @@ class luminskinPage {
     static homePage(){
 
         cy.visit(url)
-    }
+}
 
     static Product(){
 
