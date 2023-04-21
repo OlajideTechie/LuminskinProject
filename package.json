@@ -6,7 +6,8 @@
   "scripts": {
     "chromebrowser": "cypress run --headless --browser chrome",
     "firefox": "cypress run --headless --browser firefox",
-    "Headed": "cypress run --headed --browser firefox"
+    "Headed": "cypress run --headed --browser firefox",
+    "terminal-test": "npx cypress run"
   },
   "repository": {
     "type": "git",
@@ -19,12 +20,10 @@
   },
   "homepage": "https://github.com/Olaprog/Advancly_BDD#readme",
   "devDependencies": {
-    "concurrently": "^6.0.0",
-    "cypress": "^6.8.0",
-    "cypress-cucumber-preprocessor": "^4.0.1",
-    "cypress-dark": "^1.7.14"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@cypress/webpack-preprocessor": "^5.17.0",
+    "cypress": "^12.10.0",
+    "cypress-dark": "^1.1.0",
+    "cypress-fill-command": "^1.0.2"
   }
 }
